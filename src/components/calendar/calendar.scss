@@ -1,0 +1,13 @@
+.wrapper-calendar {
+    background-color: #fff;
+    width: 400px;
+    .calendar {
+        display: flex;
+        flex-direction: row;
+
+        .calendar_content {
+            position: relative;
+            width: 282px;
+        }
+    }
+}

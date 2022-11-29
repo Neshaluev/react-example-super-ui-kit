@@ -1,0 +1,5 @@
+{
+  "*.{scss}": ["stylelint --fix --quiet"],
+  "*.{js,jsx,ts,tsx}": ["eslint --fix --quiet"],
+  "*.md": ["prettier --write"]
+}

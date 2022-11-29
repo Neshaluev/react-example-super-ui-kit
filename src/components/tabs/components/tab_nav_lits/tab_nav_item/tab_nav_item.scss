@@ -1,0 +1,30 @@
+.tab_nav__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+    &.active {
+        border-bottom: 2px solid rgb(99 180 255);
+        background-color: rgb(241 248 254);
+        span {
+            color: rgb(99 180 255);
+        }
+    }
+
+    span {
+        font-size: 14px;
+        // font-weight: bold;
+        width: 100%;
+        text-align: center;
+        &:hover {
+            color: rgb(99 180 255);
+            text-decoration: underline;
+        }
+    }
+}

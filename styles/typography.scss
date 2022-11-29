@@ -1,0 +1,19 @@
+@mixin typography {
+    --text-body-font-family-sans: 'Helvetica Neue', 'Arial', 'Helvetica', sans-serif;
+    --text-body-font-family-monospace: 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Ubuntu Mono',
+        'Liberation Mono', 'DejaVu Sans Mono', 'Courier New', 'Courier', monospace;
+
+    --text-body-font-weight-0: 400;
+    --text-body-font-weight-1: 600;
+    --text-body-font-weight-2: 900;
+
+    --text-body-font-size-0: 14px;
+    --text-body-font-size-1: 16px;
+    --text-body-font-size-2: 20px;
+    --text-body-font-size-3: 28px;
+    --text-body-font-size-4: 32px;
+
+    font-family: var(--text-body-font-family-sans);
+    font-size: var(--text-body-font-size-1);
+    font-weight: var(--text-body-font-weight-0);
+}

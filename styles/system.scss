@@ -1,0 +1,13 @@
+@mixin colors-system-light {
+    --color-scroll-track: var(--color-base-background);
+    --color-scroll-handle: var(--color-private-black-100);
+    --color-scroll-handle-hover: var(--color-private-black-150);
+    --color-scroll-corner: var(--color-private-black-100);
+}
+
+@mixin colors-system-dark {
+    --color-scroll-track: var(--color-base-background);
+    --color-scroll-handle: var(--color-private-white-150);
+    --color-scroll-handle-hover: var(--color-private-white-250);
+    --color-scroll-corner: var(--color-private-white-150);
+}

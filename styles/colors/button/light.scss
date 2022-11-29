@@ -1,0 +1,28 @@
+@mixin colors-button-light {
+    --my-color-button-normal: var(--color-private-black-700);
+
+    --my-color-button-accent: var(--color-private-blue-550);
+    --my-color-button-accent-text: var(--color-private-blue-550);
+    --my-color-button-accent-outline: var(--color-private-blue-300);
+    --my-color-button-accent-bg-hover: var(--color-private-blue-100-solid);
+
+    --my-color-button-primary: var(--color-private-blue-550);
+    --my-color-button-primary-bg-hover: var(--color-private-blue-100);
+
+    --my-color-button-success: var(--color-private-green-450-solid);
+
+    --my-color-button-error: var(--color-private-red-550);
+
+    --my-color-button-normal-hover: var(--color-private-blue-600);
+    --my-color-button-light: var(--color-private-blue-300);
+    --my-color-button-selection: var(--color-private-blue-50);
+    --my-color-button-selection-hover: var(--color-private-blue-100);
+    --my-color-button-link: var(--my-color-brand-normal);
+    --my-color-button-link-hover: var(--color-private-blue-800);
+    --my-color-button-text: var(--my-color-brand-normal);
+    --my-color-button-text-contrast: var(--color-text-light-primary);
+    --my-color-button-link-visited: var(--color-private-purple-550);
+    --my-color-button-link-visited-hover: var(--color-private-purple-button);
+
+    --my-color-button-svg-base-white: var(--color-private-white-1000);
+}

@@ -1,0 +1,50 @@
+.my-loader-button {
+    display: flex;
+    margin-right: 3px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid transparent;
+    border-bottom-color: unset;
+    border-radius: 50%;
+    animation: rotation 1s linear infinite;
+
+    &.size {
+        &_s {
+            width: 14px;
+            height: 14px;
+            border: 1px solid unset;
+            border-bottom-color: unset;
+        }
+        &_m {
+            width: 18px;
+            height: 18px;
+            border: 2px solid unset;
+            border-bottom-color: unset;
+        }
+        &_l {
+            width: 28px;
+            height: 28px;
+            border: 3px solid unset;
+            border-bottom-color: unset;
+        }
+        &_x {
+            width: 38px;
+            height: 38px;
+            border: 5px solid unset;
+            border-bottom-color: unset;
+        }
+    }
+
+    &.white {
+        border-bottom-color: white;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

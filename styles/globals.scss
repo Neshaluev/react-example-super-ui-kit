@@ -1,0 +1,92 @@
+@import './mixins.scss';
+@import './typography.scss';
+@import './colors/private/dark.scss';
+@import './colors/private/light.scss';
+@import './colors/base/dark.scss';
+@import './colors/base/light.scss';
+@import './colors/text/dark.scss';
+@import './colors/text/light.scss';
+@import './system.scss';
+@import './colors/button/dark.scss';
+@import './colors/button/light.scss';
+
+* {
+    @include typography;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    appearance: none;
+}
+
+.root_theme {
+    &.theme_light {
+        @include colors-private-light;
+        @include colors-base-light;
+        @include colors-text-light;
+        @include colors-system-light;
+        @include colors-button-light;
+
+        // background: #cfc;
+        background: var(--color-base-background);
+        color: var(--color-text-primary);
+    }
+    &.theme_dark {
+        @include colors-private-dark;
+        @include colors-base-dark;
+        @include colors-text-dark;
+        @include colors-system-dark;
+        @include colors-button-dark;
+
+        // background: #ccf;
+        background: var(--color-base-background);
+        color: var(--color-text-primary);
+    }
+}
+
+body.root_theme {
+    --my-scrollbar-width: 8px;
+
+    --my-border-radius-s: 5px;
+    --my-border-radius-m: 6px;
+    --my-border-radius-l: 8px;
+    --my-border-radius-xl: 10px;
+
+    --scrollbar-width: var(--my-scrollbar-width);
+    --border-radius-s: var(--my-border-radius-s);
+    --border-radius-m: var(--my-border-radius-m);
+    --border-radius-l: var(--my-border-radius-l);
+    --border-radius-xl: var(--my-border-radius-xl);
+
+    &::-webkit-scrollbar,
+    *::-webkit-scrollbar {
+        width: var(--scrollbar-width);
+        height: var(--scrollbar-width);
+        background: var(--color-scroll-track);
+    }
+
+    &::-webkit-scrollbar-track,
+    *::-webkit-scrollbar-track {
+        background: var(--color-scroll-track);
+    }
+
+    &::-webkit-scrollbar-corner,
+    *::-webkit-scrollbar-corner {
+        background: var(--color-scroll-corner);
+    }
+
+    &::-webkit-scrollbar-thumb,
+    *::-webkit-scrollbar-thumb {
+        background: var(--color-scroll-handle);
+    }
+
+    &::-webkit-scrollbar-thumb:hover,
+    *::-webkit-scrollbar-thumb:hover {
+        background: var(--color-scroll-handle-hover);
+    }
+
+    // stylelint-disable-next-line property-no-unknown
+    scrollbar-width: var(--scrollbar-width);
+    // stylelint-disable-next-line property-no-unknown
+    scrollbar-color: var(--color-scroll-handle) var(--color-scroll-track);
+}

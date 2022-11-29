@@ -1,0 +1,35 @@
+@mixin colors-text-light {
+    --color-text-primary: var(--color-private-black-850);
+    --color-text-complementary: var(--color-private-black-700);
+    --color-text-secondary: var(--color-private-black-500);
+    --color-text-hint: var(--color-private-black-300);
+
+    --color-text-info: var(--color-private-blue-550);
+    --color-text-positive: var(--color-private-green-600);
+    --color-text-warning-medium: var(--color-private-yellow-700);
+    --color-text-warning-heavy: var(--color-private-yellow-800);
+    --color-text-danger: var(--color-private-red-500);
+    --color-text-utility: var(--color-private-purple-550);
+    --color-text-misc: var(--color-private-cool-grey-800);
+
+    --color-text-special: var(--my-color-brand-normal);
+    --color-text-link: var(--my-color-brand-link);
+    --color-text-link-hover: var(--my-color-brand-link-hover);
+    --color-text-link-visited: var(--my-color-brand-link-visited);
+    --color-text-link-visited-hover: var(--my-color-brand-link-visited-hover);
+    --color-text-yandex-red: var(--color-private-red-550);
+
+    --color-text-dark-primary: var(--color-private-black-850);
+    --color-text-dark-complementary: var(--color-private-black-700);
+    --color-text-dark-secondary: var(--color-private-black-500);
+
+    --color-text-light-primary: var(--color-private-white-1000);
+    --color-text-light-complementary: var(--color-private-white-850);
+    --color-text-light-secondary: var(--color-private-white-700);
+    --color-text-light-hint: var(--color-private-white-500);
+
+    --color-text-inverted-primary: var(--color-private-white-1000);
+    --color-text-inverted-complementary: var(--color-private-white-850);
+    --color-text-inverted-secondary: var(--color-private-white-700);
+    --color-text-inverted-hint: var(--color-private-white-500);
+}
